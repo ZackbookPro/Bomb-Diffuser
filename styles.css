@@ -1,0 +1,207 @@
+.body {
+  background-size: cover;
+  font-family: 'Orbitron', sans-serif;
+
+}
+
+
+.container {
+  margin: 0 auto;
+  height: 88vh;
+  border: 3px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+  background-color: grey
+}
+
+.welcome {
+  font-family: 'Orbitron', sans-serif;
+  font-size: larger;
+  margin: 10em auto;
+  width: 50%;
+}
+
+.welcome p {
+  line-height: 2;
+}
+
+#restart {
+  color: white;
+  font-family: 'Orbitron', sans-serif;;
+  background-color: red;
+  height: 60px;
+  width: 120px;
+  position: absolute;
+  top: 30em;
+  left: 52em;
+}
+
+.bomb {
+  margin-top: 1em;
+  width: 30vw;
+  height: 83vh;
+  display: inline-block;
+  border: 3px solid black;
+  border-radius: 20px;
+  vertical-align: middle;
+  background-color: white;
+  background-image: url(images/dynamite.svg);
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position-x: center;
+  background-position-y: 75%;
+  
+}
+
+.timer {
+  background-color: white;
+}
+
+#left{
+  margin-right: 13em;
+}
+
+#right{
+  margin-left: 13em;
+}
+
+.timer {
+  width: 300px;
+  height: 130px;
+  border: 3px solid black;
+  margin: -8em  auto;
+  background-color: white;
+}
+
+#display {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 85px;
+  text-align: center;
+  color: red;
+  position: absolute;
+  top: 8.5em;
+  left: 7.1em;
+
+}
+
+.wire {
+  margin-top: 9.8em;
+  margin-bottom: -6.5em;
+  margin-left: 28.5em;
+  width: 28vw;
+  height: 8px;
+  cursor: url(images/scissors-solid.svg), pointer;
+  border: 2px solid black;
+}
+
+.cutout {
+  margin: -2px auto;
+  height: 30px;
+  width: 60px;
+  background-color: transparent;
+}
+
+#youwin {
+  color: green;
+  font-family: 'Orbitron', sans-serif;;
+  font-size: 330px;
+  text-align: center;
+  margin: 40px auto;
+  animation: fadeInAnimation ease 6s;
+}
+
+#gameover {
+  color: red;
+  font-family: 'Orbitron', sans-serif;;
+  font-size: 300px;
+  text-align: center;
+  margin: 60px auto;
+  animation: fadeInAnimation ease 6s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+/* cutouts  for when the wire is clicked */
+
+#C0{
+  background-color: transparent;
+}
+
+#C1{
+  background-color: transparent;
+}
+
+#C2{
+  background-color: transparent;
+}
+
+#C3{
+  background-color: transparent;
+}
+
+#C4{
+  background-color: transparent;
+}
+
+#C5{
+  background-color: transparent;
+}
+
+#C6{
+  background-color: transparent;
+}
+
+#C7{
+  background-color: transparent;
+}
+
+
+#C8{
+  background-color: transparent;
+}
+
+
+
+
+#W0{
+
+}
+
+#W1{
+}
+
+#W2{
+
+}
+
+#W3{
+
+}
+
+#W4{
+
+}
+
+
+#W5{
+
+}
+
+#W6{
+
+}
+
+
+#W7{
+
+}
+
+#W8{
+}
