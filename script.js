@@ -73,7 +73,6 @@ let createGameBoard = () => {
   timer.classList.add('timer')
   timer.setAttribute('id', 'display')
   container.appendChild(timer)
-
 }
 
 let shuffleWires = () => {
@@ -226,7 +225,7 @@ let cutOutSeven = document.getElementById("C6")
       gameWon()
     }
     if(wireOne.style.backgroundColor === cutSequence[0]){
-      cutOutOne.style.backgroundColor = "grey"
+      wireOne.style.visibility = "hidden"
       cutSequence.shift(cutSequence[0])
     }
     else {
@@ -240,7 +239,7 @@ let cutOutSeven = document.getElementById("C6")
       gameWon()
     }
     if(wireTwo.style.backgroundColor === cutSequence[0]){
-      cutOutTwo.style.backgroundColor = "grey"
+      wireTwo.style.visibility = "hidden"
       cutSequence.shift(cutSequence[0])
     } 
     else {
@@ -255,7 +254,7 @@ let cutOutSeven = document.getElementById("C6")
       gameWon()
     }
     if(wireThree.style.backgroundColor === cutSequence[0]){
-      cutOutThree.style.backgroundColor = "grey"
+      wireThree.style.visibility = "hidden"
       cutSequence.shift(cutSequence[0])
     } 
     else {
@@ -269,7 +268,7 @@ let cutOutSeven = document.getElementById("C6")
       gameWon()
     }
     if(wireFour.style.backgroundColor === cutSequence[0]){
-      cutOutFour.style.backgroundColor = "grey"
+      wireFour.style.visibility = "hidden"
       cutSequence.shift(cutSequence[0])
     } 
     else {
@@ -283,7 +282,7 @@ let cutOutSeven = document.getElementById("C6")
       gameWon()
     }
     if(wireFive.style.backgroundColor === cutSequence[0]){
-      cutOutFive.style.backgroundColor = "grey"
+      wireFive.style.visibility = "hidden"
       cutSequence.shift(cutSequence[0])
     } 
     else {
@@ -297,7 +296,7 @@ let cutOutSeven = document.getElementById("C6")
       gameWon()
     }
     if(wireSix.style.backgroundColor === cutSequence[0]){
-      cutOutSix.style.backgroundColor = "grey"
+      wireSix.style.visibility = "hidden"
       cutSequence.shift(cutSequence[0])
     } 
     else {
@@ -311,7 +310,7 @@ let cutOutSeven = document.getElementById("C6")
       gameWon()
     }
     if(wireSeven.style.backgroundColor === cutSequence[0]){
-      cutOutSeven.style.backgroundColor = "grey"
+      wireSeven.style.visibility = "hidden"
       cutSequence.shift(cutSequence[0])
     } 
     else {
@@ -325,13 +324,13 @@ let cutOutSeven = document.getElementById("C6")
 let bombGame = () => {
   shuffleWires()
   createGameBoard()
-  /*applyWireColors()*/
   createCutSequence()
   setTimeout(colorFlash, 2000)
   setTimeout(startTime, 10000)
   setTimeout(clickEvents, 10000)
   
 }
+  /*applyWireColors()*/
 
 
 //create a function that flashes the colors in the timer window quickly before the game starts
