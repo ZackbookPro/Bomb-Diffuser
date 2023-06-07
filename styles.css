@@ -1,4 +1,4 @@
-.body {
+body {
   background-size: cover;
   font-family: 'Orbitron', sans-serif;
 
@@ -216,12 +216,15 @@
 
 
 @media only screen and (max-width: 1152px){
-
+  body {
+  }
+  
   #right {
     display: none;
   }
 
   .container {
+    position: fixed;
     margin: auto;
     width: 80%;
   }
@@ -230,7 +233,7 @@
     font-family: 'Orbitron', sans-serif;
     font-size: larger;
     margin: 1em auto;
-    width: 80%;
+    width: 90%;
   }
 
   .bomb {
@@ -256,15 +259,15 @@
     height: 8px;
     cursor: url(images/scissors-solid.svg), pointer;
     border: 2px solid black;
-    
+
     z-index: 0;
   }
 
   .timer {
-    position: fixed;
+    position: absolute;
     margin: 0 auto;
     top: 8%;
-    left: 43%;
+    left: 62%;
     width: 100px;
     height: 43px;
     border: 3px solid black;
@@ -273,11 +276,31 @@
   }
   
   #display {
+    position: absolute;
     font-family: 'Orbitron', sans-serif;
     font-size: 26px;
     text-align: center;
     color: red;
   }
   
+  #gameover {
+    color: red;
+    font-family: 'Orbitron', sans-serif;;
+    font-size: 100px;
+    text-align: center;
+    margin: 60px auto;
+    animation: fadeInAnimation ease 6s;
+  }
+
+  #restart {
+    color: white;
+    font-family: 'Orbitron', sans-serif;;
+    background-color: red;
+    height: 60px;
+    width: 120px;
+    position: absolute;
+    top: 30em;
+    left: 10em;
+  }
 }
 
