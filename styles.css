@@ -217,6 +217,7 @@ body {
 
 @media only screen and (max-width: 1152px){
   body {
+    overflow: scroll;
   }
   
   #right {
@@ -231,7 +232,7 @@ body {
 
   .welcome {
     font-family: 'Orbitron', sans-serif;
-    font-size: large;
+    font-size: medium;
     margin: 1em auto;
     width: 90%;
   }
